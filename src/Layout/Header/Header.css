@@ -1,0 +1,15 @@
+.header-div {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-options {
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  padding: 0 5px 0;
+}/*# sourceMappingURL=Header.css.map */
