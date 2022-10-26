@@ -1,8 +1,17 @@
+@import "../../Assets/Styles/styles.scss";
+
 .header-div {
   width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-around;
+}
+
+.navigation-div {
+  @include displayCenter;
+  position: absolute;
+  left: 20px;
+  top: 30px;
 }
 
 .menu-options {
@@ -12,4 +21,5 @@
 
 h4 {
   padding: 0 5px 0;
+  font-size: 1.2rem;
 }

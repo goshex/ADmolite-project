@@ -3,4 +3,21 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: rgb(114, 29, 64);
+  flex-direction: column;
+}
+.about-div div {
+  max-width: 1000px;
+}
+.about-div div:nth-child(1) p:nth-child(1) {
+  font-size: 2rem;
+}
+.about-div div:nth-child(2) {
+  padding: 0 30px;
+}
+.about-div div:nth-child(2) p {
+  font-size: 1.2rem;
+}
+.about-div div:nth-child(2) p:nth-child(3) {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=About.css.map */

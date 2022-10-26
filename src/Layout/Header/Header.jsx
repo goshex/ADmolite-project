@@ -1,21 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Home from "../../Component/Menu/Menu";
 import "./Header.css";
 
 const Header = () => {
   return (
     <div className="header-div">
-      <div>
-        <NavLink to="/">
-          <h1>FLEXSTART</h1>
-        </NavLink>
+      <div className="navigation-div">
+        <Home></Home>
       </div>
-      <div className="menu-options">
-        <NavLink to="/About">
-          <h4>ABOUT</h4>
+      <div>
+        <NavLink
+          to="/"
+          style={({ isActive }) => ({
+            color: "#ee5b0d",
+            textDecorationLine: "none",
+          })}
+        >
+          <h1>GEORGI'S PROJECT</h1>
         </NavLink>
-        <h4>MEMBERSHIP</h4>
-        <h4>GUIDES</h4>
       </div>
     </div>
   );

@@ -1,6 +1,13 @@
+@import "../../Assets/Styles/styles.scss";
+
 .footer-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayCenter;
   background-color: white;
+
+  max-height: 150px;
+  height: 100%;
+
+  h1 {
+    font-size: 1.2rem;
+  }
 }

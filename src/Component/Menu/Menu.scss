@@ -1,0 +1,18 @@
+@import "../../Assets/Styles/styles.scss";
+
+.dropdown-div {
+  position: absolute;
+  top: 60px;
+  left: -20px;
+  background: whitesmoke;
+  z-index: 999;
+  flex-direction: column;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px 20px;
+
+  h4 {
+    @include displayCenter;
+    gap: 5px;
+  }
+}

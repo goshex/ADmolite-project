@@ -1,14 +1,24 @@
+@import "../../Assets/Styles/styles.scss";
+
 .home-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  @include displayCenter;
+  background-color: $main-color;
+  position: relative;
+  background: url("../../Assets/Images/banner1.jpg") center;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+
+  .container {
+    @include displayCenter;
+    color: white;
+    font-weight: 700;
+    border: 6px solid white;
+    padding: 0px 14px;
+    // display: inline-block;
+  }
 
   p {
     font-size: 3rem;
-  }
-
-  img {
-    width: 100%;
   }
 }

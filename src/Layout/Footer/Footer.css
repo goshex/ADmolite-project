@@ -3,4 +3,9 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+  max-height: 150px;
+  height: 100%;
+}
+.footer-div h1 {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=Footer.css.map */

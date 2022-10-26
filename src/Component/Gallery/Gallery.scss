@@ -1,0 +1,84 @@
+@import "../../Assets/Styles/styles.scss";
+
+.main-div {
+  background-color: $main-color;
+
+  .slider-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    @include displayCenter;
+    width: 100%;
+    height: 100%;
+
+    .btn-close,
+    .btn-prev,
+    .btn-next {
+      position: fixed;
+      cursor: pointer;
+      opacity: 0.6;
+      color: white;
+      z-index: 999;
+    }
+
+    .btn-close:hover,
+    .btn-prev:hover,
+    .btn-next:hover {
+      opacity: 1;
+    }
+
+    .btn-close {
+      top: 40px;
+      right: 40px;
+    }
+
+    .btn-prev {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 40px;
+    }
+
+    .btn-next {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 40px;
+    }
+  }
+
+  .full-screen-image {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    @include displayCenter;
+  }
+
+  .full-screen-image img {
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+.gallery-wrap {
+  @include displayCenter;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 620px;
+  margin: 0 auto;
+
+  .single {
+    width: 200px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    img:hover {
+      transform: scale(1.02);
+    }
+  }
+}
