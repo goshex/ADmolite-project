@@ -1,0 +1,90 @@
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+form {
+  max-width: 451px;
+}
+
+textarea {
+  height: 250px;
+  font-family: "Helvetica", Arial, Lucida Grande, sans-serif;
+}
+
+button {
+  background-color: rgb(238, 91, 13);
+  opacity: 0.8;
+  font-size: 1rem;
+  font-family: Anton;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.contact-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.submit-div {
+  background-color: white;
+  max-width: 451px;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.error-message {
+  display: flex;
+  -webkit-margin-before: default;
+          margin-block-start: default;
+  -webkit-margin-after: default;
+          margin-block-end: default;
+  -webkit-margin-start: default;
+          margin-inline-start: default;
+  -webkit-margin-end: default;
+          margin-inline-end: default;
+  width: 100%;
+  font-family: "Helvetica", Arial, Lucida Grande, sans-serif;
+  color: red;
+  margin: 2px 0 10px;
+}
+
+.button-modal {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=Contact.css.map */

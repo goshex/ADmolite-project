@@ -6,16 +6,14 @@
   position: relative;
   background: url("../../Assets/Images/banner1.jpg") center;
   background-size: cover;
-  height: 500px;
+  height: 575px;
   overflow: hidden;
 
   .container {
     @include displayCenter;
     color: white;
-    font-weight: 700;
     border: 6px solid white;
     padding: 0px 14px;
-    // display: inline-block;
   }
 
   p {

@@ -6,8 +6,14 @@ import {
   faHouseChimney,
   faAddressCard,
   faCameraRetro,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Menu.css";
+
+const onActiveNavLink = (isActive) => ({
+  color: isActive ? "#ee5b0d" : "#000000",
+  textDecorationLine: "none",
+});
 
 const Menu = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -25,10 +31,8 @@ const Menu = () => {
         <div className="dropdown-div">
           <NavLink
             to="/"
-            style={({ isActive }) => ({
-              color: isActive ? "#ee5b0d" : "#000000",
-              textDecorationLine: "none",
-            })}
+            style={({ isActive }) => onActiveNavLink(isActive)}
+            onClick={toggleDropdown}
           >
             <h4>
               <FontAwesomeIcon icon={faHouseChimney} /> MENU
@@ -36,10 +40,8 @@ const Menu = () => {
           </NavLink>
           <NavLink
             to="/About"
-            style={({ isActive }) => ({
-              color: isActive ? "#ee5b0d" : "#000000",
-              textDecorationLine: "none",
-            })}
+            style={({ isActive }) => onActiveNavLink(isActive)}
+            onClick={toggleDropdown}
           >
             <h4>
               <FontAwesomeIcon icon={faAddressCard} /> ABOUT
@@ -47,17 +49,24 @@ const Menu = () => {
           </NavLink>
           <NavLink
             to="/Gallery"
-            style={({ isActive }) => ({
-              color: isActive ? "#ee5b0d" : "#000000",
-              textDecorationLine: "none",
-            })}
+            style={({ isActive }) => onActiveNavLink(isActive)}
+            onClick={toggleDropdown}
           >
             <h4>
               <FontAwesomeIcon icon={faCameraRetro} />
               GALLERY
             </h4>
           </NavLink>
-          <h4>GUIDES</h4>
+          <NavLink
+            to="/Contact"
+            style={({ isActive }) => onActiveNavLink(isActive)}
+            onClick={toggleDropdown}
+          >
+            <h4>
+              <FontAwesomeIcon icon={faEnvelope} />
+              CONTACT US
+            </h4>
+          </NavLink>
         </div>
       )}
     </div>
