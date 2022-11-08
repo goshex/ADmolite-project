@@ -7,6 +7,7 @@ import About from "../Pages/About/About";
 import "./App.scss";
 import Gallery from "../Component/Gallery/Gallery";
 import ContactPage from "../Pages/Contact/Contact";
+import StarWars from "../Pages/StarWars/StarWars";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/About" element={<About />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Contact" element={<ContactPage />} />
+        <Route path="/StarWars" element={<StarWars />}></Route>
       </Routes>
       <Footer />
     </div>

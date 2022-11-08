@@ -7,6 +7,7 @@ import {
   faAddressCard,
   faCameraRetro,
   faEnvelope,
+  faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Menu.css";
 
@@ -65,6 +66,16 @@ const Menu = () => {
             <h4>
               <FontAwesomeIcon icon={faEnvelope} />
               CONTACT US
+            </h4>
+          </NavLink>
+          <NavLink
+            to="/StarWars"
+            style={({ isActive }) => onActiveNavLink(isActive)}
+            onClick={toggleDropdown}
+          >
+            <h4>
+              <FontAwesomeIcon icon={faRobot} />
+              Star Wars
             </h4>
           </NavLink>
         </div>
